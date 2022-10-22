@@ -44,7 +44,7 @@ body {
   background-image: url(../others/track.png);
   background-repeat: repeat-x;
   position: absolute;
-  top: 80vh;
+  top: 73vh;
 }
 
 .car {
@@ -55,7 +55,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 200px;
-  bottom: 20vh;
+  bottom: 28vh;
 }
 
 .wheel1 img {
@@ -95,7 +95,7 @@ body {
     transform: translateY(-5px);
   }
 }
-/* @keyframes shakebody {
+@keyframes shakebody {
   0% {
     transform: translateY(-5px);
   }
@@ -105,7 +105,7 @@ body {
   100% {
     transform: translateY(-5px);
   }
-} */
+}
 
 @media screen and (max-width: 427px) {
   .car {
