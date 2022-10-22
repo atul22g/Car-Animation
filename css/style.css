@@ -2,13 +2,28 @@
   margin: 0;
   padding: 0;
 }
+html,
 body {
   overflow: hidden;
+}
+.container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
   animation: shakebody linear 6s infinite;
 }
+
+#btn {
+  margin: 15px;
+  position: relative;
+z-index: 2;
+cursor: pointer
+}
+
 .sky {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-image: url(../others/background.jpg);
   background-repeat: no-repeat;
   position: absolute;
@@ -29,7 +44,6 @@ body {
   background-repeat: repeat-x;
   position: absolute;
   top: 70vh;
-  animation: carMove linear 13s infinite;
 }
 
 .car {
@@ -39,9 +53,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  left: 200px;
+  left: 300px;
   bottom: 30vh;
-  animation: shake linear 0.3s infinite;
 }
 
 .wheel1 img {
@@ -49,7 +62,6 @@ body {
   position: relative;
   top: 42px;
   left: 42px;
-  animation: wheelRotation linear 0.16s infinite;
 }
 
 .wheel2 img {
@@ -57,7 +69,6 @@ body {
   position: relative;
   top: -39px;
   left: 235px;
-  animation: wheelRotation linear 0.16s infinite;
 }
 
 @keyframes wheelRotation {
@@ -83,6 +94,18 @@ body {
     transform: translateY(-5px);
   }
 }
+@keyframes shakebody {
+  0% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
 @media screen and (max-width: 427px) {
   .car {
     left: 10px;
@@ -98,21 +121,25 @@ body {
     left: -25px;
   }
 }
+@media screen and (max-height: 480px) {
+  .trees {
+    top: -100px;
+  }
+}
+@media screen and (max-height: 325px) {
+  .trees {
+    top: -93px;
+  }
+}
 
 @media screen and (max-width: 300px) {
-    body {
-      display: none;
-    }
+  body {
+    display: none;
   }
-/* @keyframes shakebody
-{
-    0%{
-        transform: translateY(-50px);
-    }
-    50%{
-        transform: translateY(50px);
-    }
-    100%{
-        transform: translateY(-50px);
-    }
-} */
+}
+
+@media screen and (max-height: 320px) {
+  body {
+    display: none;
+  }
+}
