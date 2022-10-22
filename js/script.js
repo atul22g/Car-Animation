@@ -1,24 +1,17 @@
 // Get elemet by document
 const btn = document.getElementById("btn");
-
-// Create Element Audio
-let audio = document.createElement("audio");
-audio.setAttribute("src", "../others/sound.mp3");
-audio.loop = true;
-
-// Btn after Audio
-btn.after(audio);
+const audio = document.getElementById("audio");
 
 // classList of btn
 const list = btn.classList;
 
 // add class in btn
 list.add("fa-solid");
-list.add("fa-3x");
+list.add("fa-4x");
 list.add("fa-play");
 
 btn.addEventListener("click", function () {
-  if (btn.classList.value == "fa-solid fa-3x fa-play") {
+  if (btn.classList.value == "fa-solid fa-4x fa-play") {
     // play to pause btn
     list.remove("fa-play");
     list.add("fa-pause");
@@ -31,10 +24,10 @@ btn.addEventListener("click", function () {
       "wheelRotation linear 0.16s infinite";
     document.getElementById("Wheel2").style.animation =
       "wheelRotation linear 0.16s infinite";
-    document.getElementById("container").style.animation =
-      "shakebody linear 6s infinite";
+    // document.getElementById("container").style.animation =
+    //   "shakebody linear 6s infinite";
     // Audio
-    audio.play();
+    audio.setAttribute("src", "others/sound.mp3");
   } else {
     // pause to play btn
     btn.classList.remove("fa-pause");
@@ -44,8 +37,8 @@ btn.addEventListener("click", function () {
     document.getElementById("car").style.animation = "";
     document.getElementById("Wheel1").style.animation = "";
     document.getElementById("Wheel2").style.animation = "";
-    document.getElementById("container").style.animation = "";
+    // document.getElementById("container").style.animation = "";
     // Audio
-    audio.pause();
+    audio.setAttribute("src", "");
   }
 });

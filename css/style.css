@@ -16,9 +16,10 @@ body {
 
 #btn {
   margin: 15px;
+  margin-left: 48vw;
   position: relative;
-z-index: 2;
-cursor: pointer
+  /* z-index: 2; */
+  cursor: pointer;
 }
 
 .sky {
@@ -35,7 +36,7 @@ cursor: pointer
   background-image: url(../others/trees.png);
   background-size: cover;
   position: absolute;
-  top: -144px;
+  top: -120px;
 }
 .track {
   height: 60vh;
@@ -43,7 +44,7 @@ cursor: pointer
   background-image: url(../others/track.png);
   background-repeat: repeat-x;
   position: absolute;
-  top: 70vh;
+  top: 80vh;
 }
 
 .car {
@@ -53,8 +54,8 @@ cursor: pointer
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  left: 300px;
-  bottom: 30vh;
+  left: 200px;
+  bottom: 20vh;
 }
 
 .wheel1 img {
@@ -94,17 +95,17 @@ cursor: pointer
     transform: translateY(-5px);
   }
 }
-@keyframes shakebody {
+/* @keyframes shakebody {
   0% {
-    transform: translateY(-2px);
+    transform: translateY(-5px);
   }
   50% {
-    transform: translateY(2px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateY(-2px);
+    transform: translateY(-5px);
   }
-}
+} */
 
 @media screen and (max-width: 427px) {
   .car {
