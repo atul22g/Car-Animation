@@ -44,7 +44,7 @@ body {
   background-image: url(../others/track.png);
   background-repeat: repeat-x;
   position: absolute;
-  top: 73vh;
+  top: 85vh;
 }
 
 .car {
@@ -55,7 +55,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 200px;
-  bottom: 28vh;
+  bottom: 15vh;
 }
 
 .wheel1 img {
