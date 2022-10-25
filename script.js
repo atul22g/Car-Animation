@@ -24,10 +24,8 @@ btn.addEventListener("click", function () {
       "wheelRotation linear 0.16s infinite";
     document.getElementById("Wheel2").style.animation =
       "wheelRotation linear 0.16s infinite";
-    document.getElementById("container").style.animation =
-      "shakebody linear 6s infinite";
     // Audio
-    audio.setAttribute("src", "others/sound.mp3");
+    audio.setAttribute("src", "sound.mp3");
   } else {
     // pause to play btn
     btn.classList.remove("fa-pause");
@@ -37,7 +35,6 @@ btn.addEventListener("click", function () {
     document.getElementById("car").style.animation = "";
     document.getElementById("Wheel1").style.animation = "";
     document.getElementById("Wheel2").style.animation = "";
-    document.getElementById("container").style.animation = "";
     // Audio
     audio.setAttribute("src", "");
   }

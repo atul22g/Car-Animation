@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
+  animation: shakebody linear 6s infinite;
 }
 
 #btn {
@@ -24,7 +25,7 @@ body {
 .sky {
   height: 100vh;
   width: 100vw;
-  background-image: url(../others/background.jpg);
+  background-image: url("background.jpg");
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -32,7 +33,7 @@ body {
 .trees {
   height: 100vh;
   width: 100vw;
-  background-image: url(../others/trees.png);
+  background-image: url("trees.png");
   background-size: cover;
   position: absolute;
   top: -120px;
@@ -40,21 +41,21 @@ body {
 .track {
   height: 60vh;
   width: 800vw;
-  background-image: url(../others/track.png);
+  background-image: url("track.png");
   background-repeat: repeat-x;
   position: absolute;
-  top: 73vh;
+  top: 80vh;
 }
 
 .car {
   height: 100px;
   width: 380px;
-  background-image: url(../others/car_body.png);
+  background-image: url("car_body.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   left: 200px;
-  bottom: 28vh;
+  bottom: 20vh;
 }
 
 .wheel1 img {
@@ -96,13 +97,13 @@ body {
 }
 @keyframes shakebody {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
   }
   50% {
-    transform: translateY(5px);
+    transform: translateY(1px);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
   }
 }
 
